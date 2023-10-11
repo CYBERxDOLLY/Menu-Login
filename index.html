@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Verdana|Geneva|Tahoma|sans-serif|Arial|Helvetica|Georgia|'Times New Roman'|Times|serif">
+    <script src="script.js"></script>
+    <title>Menu</title>
+</head>
+
+<body>
+
+    <!--A ideia desse projeto simples é: manter oculto o botão para efetuar o
+    login e só mostrá-lo quando o usuário inserir uma senha de 6 dígitos ou mais.
+    Também não conseguimos clicar com o mouse até o botão aparecer.
+    Outra ideia divertida é fazer com que o botão se mova e fuja do mouse até
+    o usuário inserir o número correto de caracteres.-->
+
+    <div class="container">
+
+        <div class="exemplo">
+            <img src="img/cadeado.jpg" class="img-cadeado">
+            <h2>Menu de Login Divertido</h2>
+            <p>Insira seu nome de usuário e note que o botão para efetuar login só
+                aparecerá quando for inserida uma senha de 6 caracteres ou mais.
+            </p>
+        </div>
+
+        <input placeholder="Nome de usuário">
+        <input placeholder="Sua senha" type="password" id="password" onkeyup="toggleLoginButton()">
+
+        <button id="loginButton" class="hidden" onclick="login()">Entrar</button>
+    </div>
+
+
+</body>
+
+</html>

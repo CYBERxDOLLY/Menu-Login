@@ -1,0 +1,88 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img-cadeado {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #FAFAFA;
+    border: 1px solid rgb(164, 184, 160);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.exemplo {
+    background-color: papayawhip;
+    border: solid gray 1px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h2::first-letter {
+    color: darkblue;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p::first-letter {
+    color: black;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    height: 36px;
+    border: 1px solid rgb(164, 184, 160);
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(17, 107, 92);
+    color: #FAFAFA;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+button.active {
+    cursor: pointer;
+}
+
+#loginButton {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#loginButton.hidden {
+    opacity: 0;
+}
+
+/* Media queries para tornar o estilo responsivo */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .img-cadeado {
+        width: 150px;
+    }
+}
